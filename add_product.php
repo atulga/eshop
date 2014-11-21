@@ -30,7 +30,7 @@ if ($_GET['t'] !== "merchant") {
 		mysqli_close($db);
 	}
 ?>
-	Тавтай морил! <strong>Худалдагч №1.</strong> <a href="index.php?t=merchant">[Нүүр хуудас]</a> <a href="/">[Гарах]</a> <hr>
+	Тавтай морил! <strong>Худалдагч №1.</strong> <a href="<?=$config['domain']?>index.php?t=merchant">[Нүүр хуудас]</a> <a href="<?=$config['domain'] ?>">[Гарах]</a> <hr>
 	<h2>Бараа нэмэх хэсэг</h2>
 	<?php if (strlen($message)) {
 		echo $message;

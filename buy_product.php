@@ -3,28 +3,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online shop</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <?php
 $config = parse_ini_file("config.ini");
 if (!$_GET['id']) { ?>
-    <a href="/tool/index.php">[Нэвтрэх]</a>
+    <a href="<?=$config['domain'] ?>tool/index.php">[Нэвтрэх]</a>
 <?php } else {
     $id = $_GET['id'];
     $u_type = $_GET['t'];
     switch ($u_type) {
         case 'merchant':
-            echo 'Тавтай морил! <strong>Худалдагч №1.</strong> <a href="add_product.php?t=merchant">[Бараа нэмэх]</a>';
+            echo 'Тавтай морил! <strong>Худалдагч №1.</strong> <a href='.$config['domain'].'add_product.php?t=merchant">[Бараа нэмэх]</a>';
             echo '<a href="/">[Гарах]</a>';
             break;
     }
 ?>
-	<a href="/index.php?t=<?=$u_type ?>">[Нүүр хуудас]</a>
+    <a href="<?=$config['domain'] ?>index.php?t=<?=$u_type ?>">[Нүүр хуудас]</a>
 <?php
     if ($u_type != 'guest') {
-        echo '<a href="/">[Гарах]</a>';
+        echo '<a href="'.$config['domain'].'">[Гарах]</a>';
     }
 }
 ?>
@@ -57,7 +56,7 @@ if (!$_GET['id']) { ?>
                 <td><?=$row['2'] ?>₮</td>
             </tr>
         </table>
-        <a href="tdbm-pages/TW Payment Gateway.html">[Тооцоо хийх]</a>
+        <a href="<?=$config['domain'] ?>tdbm-pages/TW Payment Gateway.html">[Тооцоо хийх]</a>
 <?php }
     mysqli_close($db);
 ?>

@@ -3,18 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online shop</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <?php
 $config = parse_ini_file("config.ini");
 if (!$_GET['t']) { ?>
-    <a href="/tool/index.php">[Нэвтрэх]</a>
+    <a href="<?=$config['domain'] ?>tool/index.php">[Нэвтрэх]</a>
 <?php } else {
     switch ($_GET['t']) {
         case 'merchant':
-            echo 'Тавтай морил! <strong>Худалдагч №1.</strong> <a href="add_product.php?t=merchant">[Бараа нэмэх]</a>';
+            echo 'Тавтай морил! <strong>Худалдагч №1.</strong> <a href="'.$config['domain'].'add_product.php?t=merchant">[Бараа нэмэх]</a>';
             break;
         case 'delivery':
             echo 'Тавтай морил! <strong>Хүргэгч №1.</strong>';
@@ -23,7 +22,7 @@ if (!$_GET['t']) { ?>
             break;
     }
 ?>
-    <a href="/">[Гарах]</a>
+    <a href="<?=$config['domain'] ?>">[Гарах]</a>
 <?php } ?>
     <hr>
     <h2>Нүүр хуудас</h2>
@@ -38,7 +37,7 @@ if (!$_GET['t']) { ?>
         <table>
             <tr>
                 <td colspan="2">
-                    <a href="product_detail.php?t=<?=$_GET['t']?>&id=<?=$row[0] ?>">
+                    <a href="<?=$config['domain'] ?>product_detail.php?t=<?=$_GET['t']?>&id=<?=$row[0] ?>">
                     <img src="static/images/<?= isset($row['pic']) ? $row['pic'] : "no_image.png"?>"/>
                     </a>
                 </td>

@@ -1,4 +1,4 @@
-domain = "http://eshop.dev/"
+domain = "http://eshop.dev"
 
 db["host"] = "localhost"
 db["user"] = "root"
