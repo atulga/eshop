@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)https://acsvisa.bankcard.mn/PaReqVISA.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Verified By VISA</title>
+
+<script language="javascript" src="./Verified_By_VISA_files/MyAJAX.js"></script>
+<script>
+	var ajax = new MyAJAX();
+</script>
+<script language="javascript" src="./Verified_By_VISA_files/jquery.js"></script>
+  
+ 	<link href="./Verified_By_VISA_files/keypad.css" rel="stylesheet" type="text/css">	
+	<script language="javascript" src="./Verified_By_VISA_files/keypad.min.js"></script> 
+	
+        <link href="./Verified_By_VISA_files/style.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+<script>
+	function sendFR(pin){
+		var errorNumber = 0;
+		if ( errorNumber == 0 ) {
+			ajax.submitForm('CheckPIN.jsp;jsessionid=A85F02AE5E2C3FB493673350D85D89F1','body','fr');
+		}
+	}
+</script>
+<div id="divWait" class="load_div" style="display:none">
+    <h3><label id="labelWaite"><img src="./Verified_By_VISA_files/wait.gif"> Loading...</label></h3>
+</div>
+<script>ajax.setDivWait('divWait');</script>
+
+<div id="body2">
+
+</div>
+
+<div id="body" style="">
+	
+
+
+
+
+
+
+<table xmlns:utils="CompassJUtils.Utils" class="Main" align="center" cellpadding="0" cellspacing="0" border="0" id="maintable">
+<tbody><tr>
+<td>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr>
+<td><img align="left" src="./Verified_By_VISA_files/sc_156x83.gif"></td><td>&nbsp;
+                </td><td><img align="right" src="./Verified_By_VISA_files/LogoType1.gif"></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+<h1>Welcome&nbsp;Худалдан авач №1.</h1>
+<table bordercolor="#CCCCCC" style="border-collapse:collapse" align="center" cellpadding="0" cellspacing="0" border="1" width="95%">
+<tbody><tr>
+<td style="font-size:10px;" colspan="2">
+<h3 style="margin-bottom:0px;">Enter Your Password™</h3>
+<titlenote>
+<b>Please submit your Verified by Visa password.</b>
+<br>Verified by Visa-н нууц vгээ оруулна уу!(Интернэт PIN код)</titlenote>
+</td>
+</tr>
+<tr>
+<td width="35%" style="font-family:Tahoma, Geneva, sans-serif; font-size:10px">
+<merchant>
+<strong>Merchant</strong>
+<br>Үйлчилгээний байгууллага</merchant>&nbsp;</td><td>TEDY&nbsp;</td>
+</tr>
+<tr>
+<td style="font-family:Tahoma, Geneva, sans-serif; font-size:10px">
+<amount>
+<strong>Amount</strong>
+<br>Дүн</amount>&nbsp;</td><td>MNT&nbsp;12000,00&nbsp;
+                                </td>
+</tr>
+<tr>
+<td style="font-family:Tahoma, Geneva, sans-serif; font-size:10px">
+<expirationdate>
+<strong>Expiration Date</strong>
+</expirationdate>
+</td><td>1703&nbsp;</td>
+</tr>
+<tr>
+<td style="font-family:Tahoma, Geneva, sans-serif; font-size:10px">
+<cardnumber>
+<strong>Card Number</strong>
+<br>Картын дугаар</cardnumber>
+</td><td>0000000000007105&nbsp;</td>
+</tr>
+<tr class="type2">
+<td style="font-family:Tahoma, Geneva, sans-serif; font-size:10px">
+<personalmessage>
+<strong>Personal Message</strong>
+</personalmessage>
+</td><td>HELLO WORLD                         
+                        &nbsp;</td>
+</tr>
+<tr>
+<td style="font-family:Tahoma, Geneva, sans-serif; font-size:10px" valign="top">
+<ipin>
+<strong>Password</strong>
+<br>Интернэт PIN код</ipin>
+</td><td valign="top">
+<form method="POST" onsubmit="return false;" id="fr">
+<input tabindex="1" maxlength="6" size="5" id="iPIN" name="iPIN" type="password">&nbsp;<span id="caps">&nbsp;</span><a style="float:right" tabindex="2" id="btnSubmit" onclick="isValidPIN(document.getElementById(&#39;iPIN&#39;).value,&#39;The length of password is wrong&#39;)"><img align="absmiddle" border="0" src="./Verified_By_VISA_files/btn_submit.gif"></a>
+</form>
+</td>
+</tr>
+<tr>
+<td align="right" colspan="2"><a tabindex="3" style="color:#FF0000" class="forget_passw" target="_blank" href="https://acsvisa.bankcard.mn/PaReqVISA.jsp#" onclick="open(&#39;http://www.bankcard.mn/pin_code.html&#39;, &#39;vPopUpWin&#39;, &#39;toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=yes,width=720,height=720,left=1, top=1,screenX=1,screenY=1&#39;);return false;">Forgot Password? / Интернэт PIN-ээ мартсан уу?</a></td>
+</tr>
+<tr>
+<td align="right" colspan="2"><a tabindex="4" class="deselection" onclick="if (confirm(&#39;Are you sure you want to cancel?&#39;)) {document.getElementById(&#39;iPIN&#39;).value=&#39;&#39;;ajax.submitForm(&#39;CheckPIN.jsp;jsessionid=A85F02AE5E2C3FB493673350D85D89F1&#39;,&#39;body&#39;,&#39;fr&#39;);}">Cancel / Болих</a>&nbsp;            
+                        <a tabindex="5" target="_blank" class="deselection" href="https://acsvisa.bankcard.mn/PaReqVISA.jsp#" onclick="open(&#39;http://www.bankcard.mn/pin_code.html&#39;, &#39;vPopUpWin&#39;, &#39;toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=yes,width=720,height=720,left=1, top=1,screenX=1,screenY=1&#39;);return false;">Help / Тусламж</a></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+<form method="POST" onsubmit="return false;" id="frLang">
+<table cellspacing="0" cellpadding="0" border="0" class="tblLang" align="center">
+<tbody><tr>
+<td><script src="./Verified_By_VISA_files/getthawteseal" type="text/javascript"></script><a href="https://sealinfo.thawte.com/thawtesplash?form_file=fdf/thawtesplash.fdf&dn=ACSVISA.BANKCARD.MN&lang=en" tabindex="-1" onmousedown="return v_mDown(event);" target="THAWTE_Splash"><img name="seal" border="true" src="./Verified_By_VISA_files/getthawteseal(1)" oncontextmenu="return false;" alt="Click to Verify - This site has chosen a thawte SSL Certificate to improve Web site security"></a><input value="EN" id="lang" name="Lang" type="hidden"><input value="changeLang" name="step" type="hidden">
+<div lang="EN" tabindex="6" class="divLang divLangEN" title="English">
+                    &nbsp;
+                </div>
+<div lang="MN" tabindex="7" class="divLang divLangMN divLangOpaq" onclick="changeLang(&#39;MN&#39;);" title="Монгол">
+                    &nbsp;
+                </div>
+</td>
+</tr>
+</tbody></table>
+</form>
+<div align="center" style="margin-top:30px">
+    <a href="../thank_you.php">[Дуусгах]</a>
+</div>
+
+<script>
+var vPopUpWin=0;
+function vPopUpWindow(URLStr, left, top, width, height)
+{
+  if(vPopUpWin)
+  {
+    if(!vPopUpWin.closed) vPopUpWin.close();
+  }
+  vPopUpWin = open(URLStr, 'vPopUpWin', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=yes,width='+width+',height='+height+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');
+  vPopUpWin.focus()
+} 
+</script><table style="position:absolute" id="verisigntable" border="0">
+<tbody><tr>
+<td>
+<div align="left">
+<script src="./Verified_By_VISA_files/getseal"></script> &nbsp;
+    </div>
+</td>
+</tr>
+</tbody></table><script>
+	document.getElementById("verisigntable").style.left=document.getElementById("maintable").offsetLeft-5;
+	document.getElementById("verisigntable").style.top=16+document.getElementById("maintable").offsetTop + document.getElementById("maintable").offsetHeight - document.getElementById("verisigntable").offsetHeight;
+	
+</script><noscript>
+&lt;h1 align="center"&gt;Your browser does not support JavaScript!&lt;/h1&gt;
+</noscript><script>
+				
+			if (document.getElementById('iPIN')) document.getElementById('iPIN').onkeypress=function(e) {
+						  var inpkey=-1;
+						  if(e!=null){
+							if(e.which!=null){
+							  inpkey=e.which;
+							}else{
+							  if(e.keyCode!=null){
+								inpkey=e.keyCode;
+							  }
+							}
+						  }
+						  if ( inpkey == 13) {
+							isValidPIN(document.getElementById('iPIN').value,'The length of password is wrong');
+							if (document.getElementById('keypad-div')) document.getElementById('keypad-div').style.display='none'; 
+							return false;
+						  }
+						};	
+			
+					$('#body').show();
+					
+			
+			function isValidPIN(pin,mess) {
+				if(pin.length > 6 || pin.length < 4){ 
+					alert(mess);document.getElementById('iPIN').focus();return;
+				}
+				sendFR(pin);
+			}
+												
+			function changeLang(lang){
+				if(lang==null || lang==''){
+				return;
+				} 
+				$('.divLang'+lang).mouseover(function(){
+					$(this).removeClass('divLangOpaq');
+				}).mouseout(function(){
+					$(this).addClass('divLangOpaq');
+				});			
+				$('#lang').val(lang);
+				ajax.submitForm('VISA.jsp;jsessionid=A85F02AE5E2C3FB493673350D85D89F1','body','frLang');
+			}	
+			$(function(){
+				$('*[tabindex]').first().focus();
+				
+					$('#iPIN').bind("keypress",function(e){
+						if(isCapslock(e)){
+							$('#caps').text('Caps lock');
+							
+						}else{
+							$('#caps').text(' ');
+						}
+					});
+				 				
+				$('*[tabindex]').each(function(i){
+					$(this).not('input').focusin(function(){$(this).css("outline", "1px dotted #ccc");$('#caps').text(' ');$('#keypad-div').hide();}).focusout(function(){$(this).css("outline", "none");});
+					$(this).unbind("keydown").bind("keydown",function(event){
+						e = (event) ? event : window.event;
+						switch(e.which) {
+						case 37:
+							if ($(this)==$('*[tabindex]').first()) {
+								$('*[tabindex]').last().focus();
+							}else {
+								$('*[tabindex]').eq(i-1).focus();
+							}
+							break;
+						case 38:
+							if ($(this)==$('*[tabindex]').first()) {
+								$('*[tabindex]').last().focus();
+							}else {
+								$('*[tabindex]').eq(i-1).focus();
+							}
+							break;		
+						case 39:
+							if ($(this).attr("tabindex")==$('*[tabindex]').last().attr('tabindex')) {
+								$('*[tabindex]').first().focus();
+							}else {
+								$('*[tabindex]').eq(i+1).focus();
+							}
+							break;												
+						case 40:
+							if ($(this).attr("tabindex")==$('*[tabindex]').last().attr('tabindex')) {
+								$('*[tabindex]').first().focus();
+							}else {
+								$('*[tabindex]').eq(i+1).focus();
+							}
+							break;	
+						case 13:
+							if ($(this).hasClass('divLang')) {changeLang($(this).attr("lang"));}	
+							if ($(this).is('a')) {$(this).click();}
+							break;	
+						}	
+					});	
+				});	
+    		});												
+		</script>
+
+
+</div>
+
+
+
+<div id="keypad-div" style="display: none;"></div><div class="vimiumReset vimiumHUD" style="right: 150px; opacity: 0; display: none;"></div>
+
+</body></html>

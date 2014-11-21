@@ -1,0 +1,312 @@
+/*Screen 280x300 VISA */
+.divWait{
+	position:absolute;
+	border-style:outset;
+	top:auto;
+	left:auto;
+	right:40%;
+	bottom:50%;
+	width: 250px;
+	height:auto;
+	/*height:80px;*/
+	border: 1px solid #B0C4DE;
+	background-color:#FFFFFF;
+	color:#B0C4DE;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:20px;
+}
+body 
+	{ 
+	padding: 10%;
+	background-image:url(/Images/MC/bgr.gif)	
+	 }
+body, td 
+	{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:12px;
+	color:#333333;
+	}
+div#body
+	{
+	padding:0px}		 
+.Main
+	{
+	background-color: #FFFFFF;
+	border:1px solid #B0C4DE;
+	width:390px;
+	height:400px;
+	padding: 20px;
+	}
+.ProductLogo
+	{
+	width:89px;
+	height:51px;
+	text-align:left;
+	}
+.MemberLogo
+	{
+	width:140px;
+	height:47px;
+	text-align:right;
+	}		
+table.Main td 
+	{
+	/*padding:20px*/
+	}
+a.forget_passw, a.forget_passw:hover, a.forget_passw:visited
+	{
+	color: #666666;
+	font-size:10px;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-style: italic;
+	text-decoration:underline;
+	}
+a.deselection:link 
+	{
+	text-decoration:none;
+	font-weight:bold;
+	}
+a,a.deselection:link, a.deselection:hover, a.deselection:visited
+	{color:#999999;}
+a img
+	{
+	border: none;
+	}		
+td.td_info
+	{
+	text-align:left;
+	width:60%;
+	}
+td.td_title
+	{
+	text-align:right;
+	width:40%;
+	}	
+input
+	{color: #000000}	
+form
+	{
+	padding:0px;
+	margin:0px
+	}	
+a img
+	{
+	cursor:pointer;
+	}
+a	{
+	cursor:pointer;
+	}
+.mess_Error
+	{
+	color:#CC0000;
+	}
+h2, h1
+	{
+	font-size: 16px; 
+	}
+h3 {font-size: 14px; }	
+h1, h2, h3
+	{
+	color:#075090;
+	}
+h2 {margin:0.8em 0}
+h4, p {margin:0.5em 0}		
+caption {
+	color:#075090;
+	font-size: 16px;
+	text-align:left;
+	padding:12px 2px;
+	font-weight:bold;
+}	
+h3
+	{
+	font-size:14px;
+	margin:0px
+	}			
+table.Main td table td
+	{padding:2px}
+.ListToken	
+	{
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+.ListToken td
+	{
+	padding:2px;
+	}	
+.ListToken td
+	{
+	border-bottom:1px solid #ECE9D8;
+	border-right: none
+	}
+div.load_div
+	{
+	position:absolute;
+	z-index:1000;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:0px;
+	width:100%;
+	//width:150%;
+	height:100%;
+	background-image:url(/Images/s.png);
+	background-repeat:repeat;
+	vertical-align:middle;
+	text-align:left;	
+	}
+.load_div h3
+	{
+	font-size:12px;
+	color:#000000;
+	margin:0;
+	width:200px;
+	padding: 2px
+	}
+.type0 {display:none;}	
+.vardata {width:290px; border:0px none;}
+.vardata td {width:50%;}
+.Main td .vardata td {padding:0}
+.vardata input {width:140px}
+
+.tblLang{
+  width:390px; 
+  margin-top:10px;
+}
+.divLang{
+  height:24px;
+  width:32px;
+  background-color:transparent;
+  background-position:center center;
+  background-repeat:no-repeat;
+  float:right;
+  margin-left:5px;
+}
+.divLangOpaq{
+	filter:alpha(opacity=50);
+	opacity: .50;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*--IE 8 Transparency--*/
+}
+.divLangOpaq:hover {
+	filter:alpha(opacity=100);
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.divLangRU{
+  background-image: url(/Images/common/ru.png);
+}
+.divLangEN{
+  background-image: url(/Images/common/en.png);
+}
+.divLangAZ{
+  background-image: url(/Images/common/az.png);
+}
+.divLangKH{
+  background-image: url(/Images/common/kh.png);
+}
+.divLangGE{
+  background-image: url(/Images/common/ge.png);
+}
+.divLangMN{
+  background-image: url(/Images/common/mn.png);
+}
+.divLangFR{
+  background-image: url(/Images/common/fr.png);
+}
+#caps, .caps {
+	color:red;
+	width:46px;
+	white-space:nowrap;
+	font-size:80%;
+	font-style:italic;
+}
+.caps {display:block; float: right;padding-top:8px}
+.btnSubmit { height:25px;display:block}
+.btnNext, .btnSubmit {
+	border:0 none;
+	height:25px;
+	background-color:transparent;
+	color:transparent;
+}
+.btnNext:focus, .btnSubmit:focus {
+	outline:1px dotted #ccc;
+}
+.btnNextVISA_EN {
+	background: transparent url(/Images/VISA/btn_next.gif) center center no-repeat;
+	width:80px;
+}
+.btnNextVISA_RU {
+	background: transparent url(/Images/VISA/RU_btn_next.gif) center center no-repeat;
+	width:100px;
+}
+.btnSubmitVISA_EN {
+	background: transparent url(/Images/VISA/btn_submit.gif) center center no-repeat;
+	width:80px;
+}
+.btnSubmitVISA_RU {
+	background: transparent url(/Images/VISA/RU_btn_submit.gif) center center no-repeat;
+	width:100px;
+}
+.error {color: #CC0000; font-weight:bold; font-style:italic;}
+table.Main td table td.terms{padding-bottom:5px;}
+.chk {vertical-align:bottom;}
+.btnbodywrap{
+  background-color:#075090;
+  display:-moz-inline-stack;
+  display:inline-block;
+  _overflow:hidden;
+  zoom:1;
+  *display:inline;
+  padding-left:3px;
+  background-image: url(/Images/VISA/button_l.png);
+  background-position: top left;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.btnbody{
+  display:-moz-inline-stack;
+  display:inline-block;
+  _overflow:hidden;
+  zoom:1;
+  *display:inline;
+  padding-top:0;
+  padding-bottom:0;
+  padding-right:3px;
+  background-image: url(/Images/VISA/button_r.png);
+  background-position: top right;
+  background-repeat:no-repeat;
+  cursor: pointer;
+}
+.btncontent{
+  padding-left:5px;
+  padding-right:5px;
+  font-size:12px;
+  height:30px;
+  display:-moz-inline-stack;
+  display:inline-block;
+  _overflow:hidden;
+  zoom:1;
+  *display:inline;
+  color:#fff;
+  border:0px none;  
+  background-color:#075090;
+  background-image: url(/Images/VISA/button_c.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;  
+  MozUserSelect:none;
+  white-space: nowrap;
+  line-height:2;
+  font-weight:bold;
+  width:auto;
+  min-width:70px;
+  outline:none;
+}
+.btncontent:focus {outline:none}
+input.btncontent {
+	cursor:pointer;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:12px;
+	line-height:12px;
+}
