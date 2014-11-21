@@ -3,9 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online shop</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="width: auto; background-color:#efefeb">
 <?php
 $config = parse_ini_file("config.ini");
 if (!$_GET['id']) { ?>
@@ -28,8 +30,9 @@ if (!$_GET['id']) { ?>
 }
 ?>
     <hr>
+    <div><?php include_once("header.html"); ?></div>
+<div class="container">
     <h2>Барааны дэлгэрэнгүй</h2>
-    <hr>
 <?php
     require_once("db.php");
     $sql = "SELECT * FROM `product` WHERE id = $id";
@@ -61,5 +64,6 @@ if (!$_GET['id']) { ?>
 <?php }
     mysqli_close($db);
 ?>
+</div>
 </body>
 </html>

@@ -3,9 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online shop</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="width: auto; background-color:#efefeb">
 <?php
 $config = parse_ini_file("config.ini");
 require_once "swiftmailer/lib/swift_required.php";
@@ -52,10 +54,23 @@ $message1 = Swift_Message::newInstance('TDB')
     ->setBody('Таны гүйлгээ амжилттай хийгдлээ','text/html');
 
 $result = $mailer->send($message1);
+
+$message1 = Swift_Message::newInstance('TDB')
+    ->setFrom(array('bdummy12793@gmail.com' => 'TDB'))
+    ->setTo(array($merchant_email  => 'Хүлээн авагч'))
+    ->setSubject('Гүйлгээний мэдээлэл')
+    ->setBody('Таны дансанд 0000123 данснаас орлого орж ирлээ','text/html');
+
+$result = $mailer->send($message1);
 ?>
+<hr/>
+<div><?php include_once("header.html"); ?></div>
+<div class="container">
     Худалдан авалт хийсэн танд баярлалаа!<p />
     Таны e-mail хаяг руу бараа хүлээн авахтай холбоотой мэдээллийг явуулсан болно.<p />
     <a href="<?=$config['domain'] ?>">[Нүүр хуудас]</a>
+</div>
+<div><?php include_once("footer.html"); ?></div>
 </body>
 </html>
 

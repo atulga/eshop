@@ -2,10 +2,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
+
 <title>Online shop</title>
 </head>
 
-<body>
+<body style="width: auto; background-color:#efefeb">
 <?php
 $config = parse_ini_file("config.ini");
 if (!$_GET['t']) { ?>
@@ -25,15 +28,17 @@ if (!$_GET['t']) { ?>
     <a href="<?=$config['domain'] ?>">[Гарах]</a>
 <?php } ?>
     <hr>
-    <h2>Нүүр хуудас</h2>
-    <hr>
-    <h4>Барааны жагсаалт</h4>
+    <div><?php include_once("header.html"); ?></div>
+<div class="container">
+    <h3>Сүүлд нэмэгдсэн бараанууд</h3>
+<ul style="list-style:none">
 <?php
     require_once("db.php");
     $sql = "SELECT * FROM `product` ORDER BY `created_at` DESC";
     $r = mysqli_query($db, $sql);
     while ($row = mysqli_fetch_row($r)) {
 ?>
+    <li class="tl">
         <table>
             <tr>
                 <td colspan="2">
@@ -53,8 +58,12 @@ if (!$_GET['t']) { ?>
                 <td colspan="2"><?=substr($row['3'], 0, 30)?> <?=strlen($row['3'])>30?"...":""?> </td>
             </tr>
         </table>
+    </li>
 <?php }
     mysqli_close($db);
 ?>
+</ul>
+</div>
+    <div><?php include_once("footer.html"); ?></div>
 </body>
 </html>

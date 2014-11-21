@@ -3,9 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online shop</title>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="width: auto; background-color:#efefeb">
 <?php
 $config = parse_ini_file("config.ini");
 if (!$_GET['id']) { ?>
@@ -27,9 +29,10 @@ if (!$_GET['id']) { ?>
     }
 }
 ?>
-    <hr>
-    <h2>Та дараах барааг худалдан авхаар сонгосон байна</h2>
-    <hr>
+<hr/>
+<div><?php include_once("header.html"); ?></div>
+<div class="container">
+    <h3>Та дараах барааг худалдан авхаар сонгосон байна</h3>
 <?php
     require_once("db.php");
     $sql = "SELECT * FROM `product` WHERE id = $id";
@@ -56,9 +59,12 @@ if (!$_GET['id']) { ?>
                 <td><?=$row['2'] ?>₮</td>
             </tr>
         </table>
-        <a href="<?=$config['domain'] ?>tdbm-pages/TW_Payment_Gateway.html">[Тооцоо хийх]</a>
+        <br />
+        <a href="<?=$config['domain'] ?>pages/step1.html">[Тооцоо хийх]</a>
 <?php }
     mysqli_close($db);
 ?>
+</div>
+<div><?php include_once("footer.html"); ?></div>
 </body>
 </html>
