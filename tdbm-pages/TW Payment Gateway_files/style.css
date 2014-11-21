@@ -1,0 +1,467 @@
+/* CSS Document */
+/* Layout ******************/
+.content {	
+}
+body
+	{
+	padding-top: 1px;
+	text-align:center;
+	background-image:url(../Images/backgroundrepeat.gif);
+	}
+div.waitmsg
+	{
+	display:block;
+	border: 2px solid #3366FF;
+	clear:both;
+	width:400px;
+	height:auto;
+	//height:150px;
+	margin-left:33%;
+	margin-right:33%;
+	background-color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	padding-top: auto;
+	//padding-top:15%;
+	padding-bottom:auto;
+	//padding-bottom: 15%;
+	color: #003399;
+	}		
+#wrapper	
+	{
+	width: 940px;
+	margin: 0 auto;
+	text-align:left;
+	position:relative;
+	background-color:#FFFFFF;
+	border-top-right-radius: 13px;
+	min-height:680px;
+	-webkit-box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow:    0px 0px 9px 0px rgba(50, 50, 50, 0.8);
+	box-shadow:         0px 0px 9px 0px rgba(50, 50, 50, 0.8);
+	border-bottom-left-radius: 20px;
+  	border-bottom-right-radius: 20px;
+	}
+#main
+	{
+	width:45%;
+	float:right;
+/*	margin-top:93px;*/
+	color: black;	
+	}		
+#meta 	{
+	background-image:url(../Images/footer.gif); 
+	clear:both;			
+  	height:30px;
+  	border-bottom-left-radius: 20px;
+  	border-bottom-right-radius: 20px;	
+}	
+#line 
+	{
+	margin-top:10px;
+	margin-left:9px;
+	background-color: #0080c2;
+	color: #FFFFFF;	
+	height:18px;
+	font-size:12px;
+	font-weight:bold;
+	}	
+#content
+	{padding-bottom: 15px}
+#main p
+	{padding-right: 1px}		
+/* Fonts *******************/
+
+body, table {
+  font:10pt Tahoma, Sans-Serif;
+}
+
+h1 
+	{
+	font-size:180%;
+	letter-spacing:1px;
+	padding-left: 10px;
+	}
+.ForValuCard h1	
+	{
+	padding-left: 110px;
+	}
+#main h2  {
+  font-size:110%;
+  text-align:center;
+}
+#content p
+	{padding-left:19px;
+	padding-right:10px}
+#sections
+	 {
+  font-size:80%;  
+  height: 100%;
+}
+#sections h2, h2
+	{font-size:110%;}
+#sections table
+	{font-size:110%;}
+
+.note, .information{
+	font-size:90%;
+	background-color:white;
+}
+
+#sections input,
+#sections button,
+#sections select
+	 {
+  font-size:100%;
+}
+button,select
+	{
+	width:60px;
+	}
+/* Colors ******************/
+body 
+	{ 
+
+	}
+#title
+	{ 
+	background-image:url(../Images/newheader.gif);
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	border-top-right-radius: 13px;
+	color: #FFFFFF;
+	height:80px;
+	width:100%;
+	/*margin-bottom:80px;*/
+	}
+
+#sections input,
+#sections button,
+#sections select
+	{
+ 	 
+	}
+	
+#content {
+  background:#FFFFFF;
+  border: 1px solid #3366FF;
+}
+
+#main h2 {
+  color: #3366CC;
+}
+#sections h2
+	{
+/*	color: #666666;*/
+	padding:3px;	
+	white-space:nowrap;
+	text-align:center;
+	font-size:14px;
+	}	
+/* Misc ********************/
+table.information
+	{
+	width: 481px;
+	/*background-color: #CCCCCC;*/
+	color: black;
+	margin-left: 9px;
+	margin-bottom: 9px;
+	font-family: arial;
+	font-weight: bold;
+	border-spacing:5px;	
+	}	
+table.information tr { 
+	background-color: #eaeff2
+}
+table.note {
+	border: 1px solid #3366FF;
+	width: 380px;
+}
+table.information caption, table.note caption
+	{
+	color: #FFFFFF;
+	font-weight:bold;
+	background-color: #0080c2;
+	}
+table.note tr	
+	{	background-color: #F5F5F5;}	
+
+table.dates 
+	{
+	border-spacing:5px;	
+	color: black;
+	font-weight: bold;
+	width: 481px;	
+	}
+#sections table.dates select
+	{ width:100px}	
+#sections table.dates input {
+	width:210px;
+	float: right;
+}
+#sections table.dates input.checkbox,
+.vkoptions input.checkbox
+{width:auto}
+.vkoptions {
+    margin-left: 2%;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+}
+#cvv2 
+	{
+	width:40px !important /* только для veluCard Nigeria*/
+	}	
+/*-- 20 Nov 2007--*/		
+#sections div.OneSection
+	{
+	float:left;
+	text-align:left;
+	vertical-align:text-top;
+	padding-left:5px;
+/*	margin-top:80px;*/
+	height: 545px;	
+	}
+#InfoAbout	
+	{
+	width:auto;
+	margin-left:2%;
+	}
+#InfoAbout caption
+	{
+	color:#0033CC;
+	font-size:16px;
+	white-space:nowrap;
+	text-align:left;
+	}		
+#InfoAbout table.InfoAbout
+	{
+	width:90%;
+	border-top: 1px solid #0033CC;	
+	border-bottom: 1px solid #0033CC	
+	}	
+#InfoAbout table.InfoAbout td
+	{
+	padding: 3px 3px 3px 25px;
+	text-align:left
+	}	
+#InfoAbout table.InfoAbout td span
+	{
+	width:150px;
+	padding-right:25px
+	}
+td.TransferRates
+	{
+	vertical-align:text-top;
+	width:50%;
+	text-align:left;
+	}
+td.TransferRates label
+	{
+	text-align:left;
+	margin-bottom:5px;
+	display:block;
+	}
+input.cb_tr	
+	{
+	padding:0px;
+	margin:0px;
+	width:auto;
+	}
+td.TransferRates div
+	{
+	position: absolute;
+	margin:0px;
+	background-color: #F5F5F5;
+	border: 1px solid #003366;
+	text-align:left;
+	}
+.RatesValue	select
+	{
+	width:100px;
+	}
+.SectionsLeft, 	.SectionsRight
+	{
+	height:auto	;
+	border: 1px solid #CCCCCC;
+	width:70%;
+	margin-left:2%;
+	margin-bottom:10px;
+	padding-bottom:2px;
+	}	
+.SectionsRight table,	
+.SectionsLeft table
+	{
+	vertical-align:top;
+	}	
+#buttons
+	{
+	width:auto;
+	text-align:center;
+	clear:both;
+	}
+#buttons table	
+	{
+	text-align:center;
+	width:100%;
+	}			
+#buttons button	
+	{
+	width:90px;
+	margin:5px 15px 5px 15px
+	}
+
+table.dates th, table.dates td,
+table.inputForm td
+	{
+	padding:2px 10px 2px 11px
+	}
+table.inputForm td	
+	{
+	text-align:left;
+	}
+table.dates th, table.dates td
+	{
+	font-weight: 400;
+	font-weight:bold;
+	font-family:arial;
+	font-size:110%;	
+	text-align:left;	
+	}							
+table.inputForm
+	{
+	width:100%;
+	text-align:left;
+	margin-bottom:5px;
+	margin-top:5px;		
+	}			
+#sections table.inputForm select
+	{ width:130px}	
+#sections table.inputForm input
+	{width:270px}
+hr
+	{
+	display:none
+	}
+img.refresh {
+	margin:2px;
+	cursor:pointer;
+	vertical-align: middle;
+}	
+img {border:0;}
+a, a:link, a:visited, a:active, a p {color:#36c;text-decoration:underline; outline:none;}	
+.contextinfo {
+	width:380px;
+	margin-left: 21px;
+	margin-bottom: 12px;
+}
+tbody td {
+	padding: 5px 5px 5px 12px;	
+}
+.form_style {
+	font-family: arial;
+	font-weight: bold;
+	width: 100%;
+}
+.pan {
+	background:#d9e2e7;
+}
+.cardsecure {
+	background:#eaeff2;
+}
+.username {
+	background:#d9e2e7;
+}
+.expiredate {
+	background:#eaeff2;
+}
+.email {
+	background:#d9e2e7;
+}
+.cardinformation {
+	color: black;
+}
+.cardinformation-title {
+	height: 25px;
+	width: 472px;
+	background-image: url(../Images/informationorder.gif);
+	margin-left: 13px;	
+}
+.entercardinformation-title {
+	height: 24px;
+	width: 472px;
+	background-image: url(../Images/entercardinformation.gif);
+	margin-left: 4px;
+}
+.visalogo {
+	padding-bottom:15px;
+}
+.imagebar {
+	margin-left: 15px;
+	margin-top: 35px;
+}
+.information {
+	width: 472px;	
+	color: black;
+	margin-left: 9px;
+	font-family: arial;
+	font-weight: bold;	
+}
+#buttonsbar {
+	width: 100%;
+	height: 30px;
+	margin-bottom:10px;
+	margin-left: 5px;
+	margin-top: 12px;
+}
+.submit-button {
+	height: 25px;
+	width: 80px;	
+	float:right;
+	margin-right: 10px;	
+}
+.cancel-button {
+	height: 25px;
+	width: 80px;
+	float: right;	
+}
+.internetpin {	
+	height: 72px;
+	width: 372px;
+	margin-left: 20px;
+	position: relative;
+	display:inline-block;
+	margin-bottom: 20px;
+}
+.internetpin a {
+	position: absolute;
+	top:10px;
+	width: 28px;
+	height: 28px;	
+	text-align: center;
+	z-index: 5;
+	text-decoration: none;
+	display: block;
+}
+#container {
+	border-left: 1px solid black;
+	margin-right: 10px;
+}
+.innerborder {
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 2px solid #0080c2;
+}
+div.innerborder ol {
+	padding-left: 25px;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+.note {
+	margin-left: 20px;
+}
+#mpiRun input[type="button"], #mpiRun input[type="submit"] {
+	width:auto; 
+	padding-left:50px; 
+	padding-right: 50px;
+}

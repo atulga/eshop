@@ -1,0 +1,128 @@
+/* Alternate style sheet for jQuery Keypad*/
+button.keypad-trigger {
+	width: 25px;
+	padding: 0px;
+}
+img.keypad-trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+#keypad-div {
+	display: none;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #B0C4DE;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: #000;
+	background-color: #bcd;
+	font-family: Arial, Tahoma, Helvetica, sans-serif;
+	font-size: 14px;
+}
+div#keypad-div {
+	width:290px !important;
+	padding:5px;
+	//padding:0;
+	}
+#keypad-div.numeric {
+	width:90px !important;
+	padding:5px 20px;
+	//width:130px !important;
+}	
+#keypad-div.symbol {
+	width:290px !important;
+}
+.keypad-keyentry {
+	display: none;
+}
+.keypad-inline {
+	border: 1px solid #bbb;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-color: #f4f4f4;
+}
+.keypad-inline {
+	width:145px;}
+.keypad-inline button {	
+	font-family:Arial, sans-serif;
+	font-size:12px;
+	border: 1px solid #888;
+}
+.keypad-disabled {
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	opacity: 0.25;
+	filter: alpha(opacity=25);
+}
+.keypad-rtl {
+	direction: rtl;
+}
+.keypad-prompt {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.keypad-row {
+	clear: both;
+	//clear: none;	
+	float: left;
+	width: 100%;
+}
+.keypad-space {
+	float: left;
+	margin: 2px;
+	width: 24px;
+}
+* html .keypad-space { /* IE6 */
+	margin: 0px;
+	width: 28px;
+}
+.keypad-half-space {
+	float: left;
+	margin: 1px;
+	width: 12px;
+}
+* html .keypad-half-space { /* IE6 */
+	margin: 0px;
+	width: 14px;
+}
+.keypad-key {
+	float: left;
+	margin: 2px;
+	padding: 0px;
+	width: 24px;
+	height:24px;
+	text-align: center;
+	cursor: pointer;
+}
+.keypad-row button.keypad-key-down { background-color: #DEF2F9 !important; } 
+.keypad-spacebar {
+	width: 250px;
+}
+.keypad-clear, .keypad-back, .keypad-close {
+	font-weight: bold;
+	color:#900;
+}
+.keypad-shift {
+	width: 52px;
+	font-weight: bold;
+	color:#900;
+}
+.keypad-back {
+	//font-family:serif;
+	//font-weight:bold;
+}	
+.keypad-cover {
+	display: none;
+	display/**/: block;
+	position: absolute;
+	z-index: -1;
+	filter: mask();
+	top: -4px;
+	left: -4px;
+	width: 125px;
+	height: 200px;
+}
+&
