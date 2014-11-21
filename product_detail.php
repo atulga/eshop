@@ -65,5 +65,6 @@ if (!$_GET['id']) { ?>
     mysqli_close($db);
 ?>
 </div>
+<div><?php include_once("footer.html"); ?></div>
 </body>
 </html>
