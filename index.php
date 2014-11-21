@@ -34,16 +34,19 @@ if (!$_GET['t']) { ?>
 <ul style="list-style:none">
 <?php
     require_once("db.php");
-    $sql = "SELECT * FROM `product` ORDER BY `created_at` DESC";
+    $sql = "SELECT p.*, pp.file as pic FROM `product` p
+        LEFT JOIN product_pic pp
+        ON p.id = pp.product_id
+        ORDER BY `created_at` DESC";
     $r = mysqli_query($db, $sql);
     while ($row = mysqli_fetch_row($r)) {
 ?>
     <li class="tl">
-        <table>
+        <table class="product">
             <tr>
                 <td colspan="2">
                     <a href="<?=$config['domain'] ?>product_detail.php?t=<?=$_GET['t']?>&id=<?=$row[0] ?>">
-                    <img src="static/images/<?= isset($row['pic']) ? $row['pic'] : "no_image.png"?>"/>
+                    <img src="static/images/<?= isset($row['5']) ? $row['5'] : "no_image.png"?>" width="225px" height="225px"/>
                     </a>
                 </td>
             </tr>
@@ -64,6 +67,6 @@ if (!$_GET['t']) { ?>
 ?>
 </ul>
 </div>
-    <div><?php include_once("footer.html"); ?></div>
+<div><?php include_once("footer.html"); ?></div>
 </body>
 </html>

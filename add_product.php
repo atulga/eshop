@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online shop</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.min.css">
 </head>
-
 <body>
 <?php
 $config = parse_ini_file("config.ini");
@@ -25,17 +25,32 @@ if ($_GET['t'] !== "merchant") {
 		$r = mysqli_query($db, $sql);
 		if ($r) {
 			$message = "Бараа амжилттай нэмэгдлээ!";
+			$product_id = mysqli_insert_id($db);
+		}
+
+		$img_dir = "static/images/";
+		$file_name = $_FILES['pic']['name'];
+		$tmp_name = $_FILES['pic']['tmp_name'];
+
+		$check = getimagesize($tmp_name);
+		if ($check !== false) {
+			if (move_uploaded_file($tmp_name, "$img_dir/$file_name")) {
+				$sql = "INSERT INTO `product_pic` (`id`, `product_id`, `file`, `comment`) VALUES (NULL, '$product_id', '$file_name', '$comment')";
+				$r = mysqli_query($db, $sql);
+			}
 		}
 
 		mysqli_close($db);
 	}
 ?>
-	Тавтай морил! <strong>Худалдагч №1.</strong> <a href="<?=$config['domain']?>index.php?t=merchant">[Нүүр хуудас]</a> <a href="<?=$config['domain'] ?>">[Гарах]</a> <hr>
-	<h2>Бараа нэмэх хэсэг</h2>
+Тавтай морил! <strong>Худалдагч №1.</strong> <a href="<?=$config['domain']?>index.php?t=merchant">[Нүүр хуудас]</a> <a href="<?=$config['domain'] ?>">[Гарах]</a> <hr>
+<div><?php include_once("header.html"); ?></div>
+<div class="container">
+	<h3>Бараа нэмэх хэсэг</h3>
 	<?php if (strlen($message)) {
 		echo $message;
 	}?>
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
 <table>
 	<tr>
 		<td>Нэр:</td>
@@ -43,7 +58,9 @@ if ($_GET['t'] !== "merchant") {
 	</tr>
 	<tr>
 		<td>Зураг:</td>
-		<td><input type="text" name="pic" value="<?=$pic ?>"></td>
+		<td>
+			<input type="file" name="pic" value="<?=$pic ?>">
+		</td>
 	</tr>
 	<tr>
 		<td>Тайлбар:</td>
@@ -61,5 +78,8 @@ if ($_GET['t'] !== "merchant") {
 
 </form>
 <?php } ?>
+</div>
+<div><?php include_once("footer.html"); ?></div>
+<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
