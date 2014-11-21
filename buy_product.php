@@ -56,7 +56,7 @@ if (!$_GET['id']) { ?>
                 <td><?=$row['2'] ?>₮</td>
             </tr>
         </table>
-        <a href="<?=$config['domain'] ?>tdbm-pages/TW Payment Gateway.html">[Тооцоо хийх]</a>
+        <a href="<?=$config['domain'] ?>tdbm-pages/TW_Payment_Gateway.html">[Тооцоо хийх]</a>
 <?php }
     mysqli_close($db);
 ?>
